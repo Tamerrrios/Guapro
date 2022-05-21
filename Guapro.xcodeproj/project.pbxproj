@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F3CDE34B283847CF00B06720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CDE34A283847CF00B06720 /* AppDelegate.swift */; };
 		F3CDE34D283847CF00B06720 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CDE34C283847CF00B06720 /* SceneDelegate.swift */; };
-		F3CDE34F283847CF00B06720 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CDE34E283847CF00B06720 /* ViewController.swift */; };
+		F3CDE34F283847CF00B06720 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CDE34E283847CF00B06720 /* LogInViewController.swift */; };
 		F3CDE352283847CF00B06720 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CDE350283847CF00B06720 /* Main.storyboard */; };
 		F3CDE354283847D000B06720 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3CDE353283847D000B06720 /* Assets.xcassets */; };
 		F3CDE357283847D000B06720 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CDE355283847D000B06720 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		F3CDE347283847CF00B06720 /* Guapro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guapro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3CDE34A283847CF00B06720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3CDE34C283847CF00B06720 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F3CDE34E283847CF00B06720 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3CDE34E283847CF00B06720 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		F3CDE351283847CF00B06720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3CDE353283847D000B06720 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3CDE356283847D000B06720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +37,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F362182D2838E1C9002F01C6 /* Main Setting */ = {
+			isa = PBXGroup;
+			children = (
+				F3CDE34C283847CF00B06720 /* SceneDelegate.swift */,
+				F3CDE34A283847CF00B06720 /* AppDelegate.swift */,
+			);
+			path = "Main Setting";
+			sourceTree = "<group>";
+		};
+		F362182E2838E1D2002F01C6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F3CDE34E283847CF00B06720 /* LogInViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F362182F2838E1DA002F01C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3CDE355283847D000B06720 /* LaunchScreen.storyboard */,
+				F3CDE350283847CF00B06720 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F36218302838E1E2002F01C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F3CDE33E283847CF00B06720 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +89,11 @@
 		F3CDE349283847CF00B06720 /* Guapro */ = {
 			isa = PBXGroup;
 			children = (
-				F3CDE34A283847CF00B06720 /* AppDelegate.swift */,
-				F3CDE34C283847CF00B06720 /* SceneDelegate.swift */,
-				F3CDE34E283847CF00B06720 /* ViewController.swift */,
-				F3CDE350283847CF00B06720 /* Main.storyboard */,
+				F36218302838E1E2002F01C6 /* Model */,
+				F362182F2838E1DA002F01C6 /* View */,
+				F362182E2838E1D2002F01C6 /* Controller */,
+				F362182D2838E1C9002F01C6 /* Main Setting */,
 				F3CDE353283847D000B06720 /* Assets.xcassets */,
-				F3CDE355283847D000B06720 /* LaunchScreen.storyboard */,
 				F3CDE358283847D000B06720 /* Info.plist */,
 			);
 			path = Guapro;
@@ -138,7 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3CDE34F283847CF00B06720 /* ViewController.swift in Sources */,
+				F3CDE34F283847CF00B06720 /* LogInViewController.swift in Sources */,
 				F3CDE34B283847CF00B06720 /* AppDelegate.swift in Sources */,
 				F3CDE34D283847CF00B06720 /* SceneDelegate.swift in Sources */,
 			);
