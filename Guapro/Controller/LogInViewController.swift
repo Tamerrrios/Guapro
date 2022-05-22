@@ -8,13 +8,20 @@
 import UIKit
 
 class LogInViewController: UIViewController {
+    
+    @IBOutlet var numberTF: UITextField!
+    
+    let number = "998881222332"
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //print hello world
-        
     }
 
 
+    @IBAction func logInPressed(_ sender: UIButton) {
+        if numberTF.text == number {
+            performSegue(withIdentifier: "go" , sender: self)
+        }
+    }
 }
 
